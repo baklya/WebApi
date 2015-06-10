@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Main page";
+}
+
+<div id="body">
+
+    <div id="myModal">
+    </div>
+
+    <!-- Add Person modal -->
+    <div class="modal fade add-person-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">New Person added</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-content">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <h1>PersonsWebApi</h1>
+        <p><button class="btn btn-default" id="add-person">Add Random Person</button></p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">api/data/person</h3>
+                </div>
+
+                <div class="panel-body" id="persons-table">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                    <p><button class="btn btn-default" id="get-people">Get data</button></p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">api/data/person/filter</h3>
+                </div>
+
+                <div class="panel-body">
+
+                    <table class="table table-striped" id="filtered-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                    <p><button class="btn btn-default" id="filter-people">Get data</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ </div>
