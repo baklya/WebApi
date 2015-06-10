@@ -27,7 +27,6 @@ $(document).ready(function () {
     /**
      * Appends row to the table body
      *
-     * Перед выгрузкой корабль должен приземлиться на планету.
      * @param {tbody} tbody table body.
      * @param {Number} index
      * @param {Number} name Person name.
